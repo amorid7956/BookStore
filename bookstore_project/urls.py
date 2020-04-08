@@ -22,4 +22,6 @@ urlpatterns = [
     path('accounts/', include('allauth.urls')), #User Management
 
     path('', include('pages.urls')),
+
+    path('books/', include('books.urls')),
 ]
