@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'users.apps.UsersConfig',
     'pages.apps.PagesConfig',
     'books.apps.BooksConfig',
+    'orders.apps.OrdersConfig',
 
 
 ]
@@ -161,3 +162,6 @@ MEDIA_ROOT=os.path.join(BASE_DIR, 'media')
 
 AUTH_USER_MODEL='users.CustomUser'
 DEFAULT_FROM_EMAIL = 'admin@djangobookstore.com'
+
+STRIPE_TEST_PUBLISHABLE_KEY='pk_test_yLmj6hlm0Dk05RvaIUu25K3g00A9eEZUJc'
+STRIPE_TEST_SECRET_KEY='sk_test_423ncV7GEdddul6p8DA91QkM00zKqXwhZh'
